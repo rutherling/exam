@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+body {
+  background-color: #568DBB;
+}
+
+div {
+  font-family: 'Montserrat', helvetica, arial;
+  color: white;
+}
+
+.exampleDiv {
+  height: 800px;
+  width: 800px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  float: left;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.ball {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background-color: #34A20D;
+  padding-top: 30px;
+}
+
+@-webkit-keyframes bouncing {
+  40%, 70%, 90% {
+    bottom: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  0% {
+    bottom: 600px;
+    left: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  55% {
+    bottom: 150px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  80% {
+    bottom: 75px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  95% {
+    bottom: 30px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    left: 110px;
+    bottom: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  @-moz-keyframes bouncing {
+    40%, 70%, 90% {
+      bottom: 0;
+      -webkit-animation-timing-function: ease-out;
+    }
+    0% {
+      bottom: 600px;
+      left: 0;
+      -webkit-animation-timing-function: ease-in;
+    }
+    55% {
+      bottom: 150px;
+      -webkit-animation-timing-function: ease-in;
+    }
+    80% {
+      bottom: 75px;
+      -webkit-animation-timing-function: ease-in;
+    }
+    95% {
+      bottom: 30px;
+      -webkit-animation-timing-function: ease-out;
+    }
+    100% {
+      left: 330px;
+      bottom: 0;
+      -webkit-animation-timing-function: ease-out;
+    }
